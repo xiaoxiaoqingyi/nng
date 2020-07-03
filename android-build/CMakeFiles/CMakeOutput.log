@@ -1,0 +1,665 @@
+The target system is: Android - 1 - armv7-a
+The host system is: Windows - 10.0.18363 - AMD64
+Determining if the C compiler works passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_b2cc9/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_b2cc9.dir\build.make CMakeFiles/cmTC_b2cc9.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2cc9.dir/testCCompiler.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE   -o CMakeFiles\cmTC_b2cc9.dir\testCCompiler.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_b2cc9
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b2cc9.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security    -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_b2cc9.dir/testCCompiler.c.o  -o cmTC_b2cc9 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_2c0db/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_2c0db.dir\build.make CMakeFiles/cmTC_2c0db.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c0db.dir/CMakeCCompilerABI.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE   -v -o CMakeFiles\cmTC_2c0db.dir\CMakeCCompilerABI.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c"
+Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
+Target: armv7-none-linux-android19
+Thread model: posix
+InstalledDir: E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin
+Found candidate GCC installation: E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi\4.9.x
+Selected GCC installation: E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
+Candidate multilib: thumb;@mthumb
+Candidate multilib: armv7-a;@march=armv7-a
+Candidate multilib: armv7-a/thumb;@march=armv7-a@mthumb
+Candidate multilib: .;
+Selected multilib: armv7-a/thumb;@march=armv7-a@mthumb
+ "E:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe" -cc1 -triple thumbv7-none-linux-android19 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu generic -target-feature +soft-float-abi -target-feature -fp-only-sp -target-feature +d16 -target-feature +vfp3 -target-feature -fp16 -target-feature -vfp4 -target-feature -fp-armv8 -target-feature -neon -target-feature -crypto -target-abi aapcs-linux -mfloat-abi soft -fallow-half-arguments-and-returns -dwarf-column-info -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -coverage-notes-file "E:\\cProject\\nng\\android-build\\CMakeFiles\\CMakeTmp\\CMakeFiles\\cmTC_2c0db.dir\\CMakeCCompilerABI.c.gcno" -resource-dir "E:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7" -D ANDROID -isysroot E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -internal-isystem E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include -internal-isystem "E:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\include" -internal-externc-isystem E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include -internal-externc-isystem E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include -Wformat -Werror=format-security -fdebug-compilation-dir "E:\\cProject\\nng\\android-build\\CMakeFiles\\CMakeTmp" -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fno-signed-char -fobjc-runtime=gcc -fdiagnostics-show-option -o "CMakeFiles\\cmTC_2c0db.dir\\CMakeCCompilerABI.c.o" -x c "D:\\Program Files\\CMake\\share\\cmake-3.15\\Modules\\CMakeCCompilerABI.c"
+clang -cc1 version 8.0.7 based upon LLVM 8.0.7svn default target x86_64-w64-windows-gnu
+ignoring nonexistent directory "E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include
+ E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\8.0.7\include
+ E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi
+ E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include
+End of search list.
+Linking C executable cmTC_2c0db
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2c0db.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security    -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections  -v CMakeFiles/cmTC_2c0db.dir/CMakeCCompilerABI.c.o  -o cmTC_2c0db 
+Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
+Target: armv7-none-linux-android19
+Thread model: posix
+InstalledDir: E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin
+Found candidate GCC installation: E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi\4.9.x
+Selected GCC installation: E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
+Candidate multilib: thumb;@mthumb
+Candidate multilib: armv7-a;@march=armv7-a
+Candidate multilib: armv7-a/thumb;@march=armv7-a@mthumb
+Candidate multilib: .;
+Selected multilib: armv7-a/thumb;@march=armv7-a@mthumb
+ "E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\\ld" --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -EL -z now -z relro -X --hash-style=both --enable-new-dtags --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_2c0db "E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19\\crtbegin_dynamic.o" "-LE:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\arm" -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19 -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/../lib -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/../../lib -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --exclude-libs libunwind.a --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_2c0db.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19\\crtend_android.o"
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include]
+    add: [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/include]
+    add: [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi]
+    add: [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
+  end of search list found
+  collapse include dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include]
+  collapse include dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/include] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/include]
+  collapse include dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi]
+  collapse include dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
+  implicit include dirs: [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include;E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/include;E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi;E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-linux-androideabi-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_2c0db/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_2c0db.dir\build.make CMakeFiles/cmTC_2c0db.dir/build]
+  ignore line: [make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_2c0db.dir/CMakeCCompilerABI.c.o]
+  ignore line: [E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE   -v -o CMakeFiles\cmTC_2c0db.dir\CMakeCCompilerABI.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
+  ignore line: [Target: armv7-none-linux-android19]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin]
+  ignore line: [Found candidate GCC installation: E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi\4.9.x]
+  ignore line: [Selected GCC installation: E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
+  ignore line: [Candidate multilib: thumb]
+  ignore line: [@mthumb]
+  ignore line: [Candidate multilib: armv7-a]
+  ignore line: [@march=armv7-a]
+  ignore line: [Candidate multilib: armv7-a/thumb]
+  ignore line: [@march=armv7-a@mthumb]
+  ignore line: [Candidate multilib: .]
+  ignore line: []
+  ignore line: [Selected multilib: armv7-a/thumb]
+  ignore line: [@march=armv7-a@mthumb]
+  ignore line: [ "E:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe" -cc1 -triple thumbv7-none-linux-android19 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu generic -target-feature +soft-float-abi -target-feature -fp-only-sp -target-feature +d16 -target-feature +vfp3 -target-feature -fp16 -target-feature -vfp4 -target-feature -fp-armv8 -target-feature -neon -target-feature -crypto -target-abi aapcs-linux -mfloat-abi soft -fallow-half-arguments-and-returns -dwarf-column-info -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -coverage-notes-file "E:\\cProject\\nng\\android-build\\CMakeFiles\\CMakeTmp\\CMakeFiles\\cmTC_2c0db.dir\\CMakeCCompilerABI.c.gcno" -resource-dir "E:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7" -D ANDROID -isysroot E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -internal-isystem E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include -internal-isystem "E:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\include" -internal-externc-isystem E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include -internal-externc-isystem E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include -Wformat -Werror=format-security -fdebug-compilation-dir "E:\\cProject\\nng\\android-build\\CMakeFiles\\CMakeTmp" -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fno-signed-char -fobjc-runtime=gcc -fdiagnostics-show-option -o "CMakeFiles\\cmTC_2c0db.dir\\CMakeCCompilerABI.c.o" -x c "D:\\Program Files\\CMake\\share\\cmake-3.15\\Modules\\CMakeCCompilerABI.c"]
+  ignore line: [clang -cc1 version 8.0.7 based upon LLVM 8.0.7svn default target x86_64-w64-windows-gnu]
+  ignore line: [ignoring nonexistent directory "E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include]
+  ignore line: [ E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\8.0.7\include]
+  ignore line: [ E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi]
+  ignore line: [ E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_2c0db]
+  ignore line: ["D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2c0db.dir\link.txt --verbose=1]
+  ignore line: [E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security    -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections  -v CMakeFiles/cmTC_2c0db.dir/CMakeCCompilerABI.c.o  -o cmTC_2c0db ]
+  ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
+  ignore line: [Target: armv7-none-linux-android19]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin]
+  ignore line: [Found candidate GCC installation: E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi\4.9.x]
+  ignore line: [Selected GCC installation: E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
+  ignore line: [Candidate multilib: thumb]
+  ignore line: [@mthumb]
+  ignore line: [Candidate multilib: armv7-a]
+  ignore line: [@march=armv7-a]
+  ignore line: [Candidate multilib: armv7-a/thumb]
+  ignore line: [@march=armv7-a@mthumb]
+  ignore line: [Candidate multilib: .]
+  ignore line: []
+  ignore line: [Selected multilib: armv7-a/thumb]
+  ignore line: [@march=armv7-a@mthumb]
+  link line: [ "E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\\ld" --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -EL -z now -z relro -X --hash-style=both --enable-new-dtags --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_2c0db "E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19\\crtbegin_dynamic.o" "-LE:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\arm" -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19 -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/../lib -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/../../lib -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --exclude-libs libunwind.a --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_2c0db.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19\\crtend_android.o"]
+    arg [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\\ld] ==> ignore
+    arg [--sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=both] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2c0db] ==> ignore
+    arg [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19\\crtbegin_dynamic.o] ==> ignore
+    arg [-LE:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\arm] ==> dir [E:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\arm]
+    arg [-LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb] ==> dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb]
+    arg [-LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb] ==> dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb]
+    arg [-LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19] ==> dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19]
+    arg [-LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi] ==> dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi]
+    arg [-LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/../lib] ==> dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/../lib]
+    arg [-LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/../../lib] ==> dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/../../lib]
+    arg [-LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb] ==> dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb]
+    arg [-LE:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+    arg [--exclude-libs] ==> ignore
+    arg [libgcc.a] ==> ignore
+    arg [--exclude-libs] ==> ignore
+    arg [libatomic.a] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--warn-shared-textrel] ==> ignore
+    arg [--fatal-warnings] ==> ignore
+    arg [--exclude-libs] ==> ignore
+    arg [libunwind.a] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [CMakeFiles/cmTC_2c0db.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19\\crtend_android.o] ==> ignore
+  collapse library dir [E:\\AndroidSDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\arm] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/arm]
+  collapse library dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb]
+  collapse library dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/arm-linux-androideabi/lib/armv7-a/thumb]
+  collapse library dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19]
+  collapse library dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi]
+  collapse library dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/../lib] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+  collapse library dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/../../lib] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+  collapse library dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/arm-linux-androideabi/lib/armv7-a/thumb]
+  collapse library dir [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+  implicit libs: [gcc;dl;c;gcc;dl]
+  implicit dirs: [E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/arm;E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb;E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/arm-linux-androideabi/lib/armv7-a/thumb;E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/19;E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi;E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_7367c/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_7367c.dir\build.make CMakeFiles/cmTC_7367c.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7367c.dir/CheckIncludeFile.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_7367c.dir\CheckIncludeFile.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_7367c
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7367c.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_7367c.dir/CheckIncludeFile.c.o  -o cmTC_7367c -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_17016/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_17016.dir\build.make CMakeFiles/cmTC_17016.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17016.dir/CheckIncludeFile.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_17016.dir\CheckIncludeFile.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_17016
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_17016.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_17016.dir/CheckIncludeFile.c.o  -o cmTC_17016 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_d0e15/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_d0e15.dir\build.make CMakeFiles/cmTC_d0e15.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0e15.dir/CheckIncludeFile.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_d0e15.dir\CheckIncludeFile.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_d0e15
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d0e15.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_d0e15.dir/CheckIncludeFile.c.o  -o cmTC_d0e15 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_dfb4a/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_dfb4a.dir\build.make CMakeFiles/cmTC_dfb4a.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dfb4a.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_dfb4a.dir\CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_dfb4a
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_dfb4a.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_dfb4a.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_dfb4a -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_f4a41/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_f4a41.dir\build.make CMakeFiles/cmTC_f4a41.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4a41.dir/TestEndianess.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_f4a41.dir\TestEndianess.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\TestEndianess.c
+Linking C executable cmTC_f4a41
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f4a41.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_f4a41.dir/TestEndianess.c.o  -o cmTC_f4a41 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C SOURCE FILE Test NNG_HIDDEN_VISIBILITY succeeded with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_3c004/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_3c004.dir\build.make CMakeFiles/cmTC_3c004.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c004.dir/src.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DNNG_HIDDEN_VISIBILITY -fPIE   -fvisibility=hidden -std=gnu99 -o CMakeFiles\cmTC_3c004.dir\src.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_3c004
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3c004.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DNNG_HIDDEN_VISIBILITY  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_3c004.dir/src.c.o  -o cmTC_3c004 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_ee950/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_ee950.dir\build.make CMakeFiles/cmTC_ee950.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee950.dir/CheckIncludeFile.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_ee950.dir\CheckIncludeFile.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_ee950
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ee950.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_ee950.dir/CheckIncludeFile.c.o  -o cmTC_ee950 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_e3eec/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_e3eec.dir\build.make CMakeFiles/cmTC_e3eec.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3eec.dir/src.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -std=gnu99 -o CMakeFiles\cmTC_e3eec.dir\src.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_e3eec
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e3eec.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCMAKE_HAVE_LIBC_PTHREAD  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_e3eec.dir/src.c.o  -o cmTC_e3eec -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function flock exists passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_0e019/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_0e019.dir\build.make CMakeFiles/cmTC_0e019.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e019.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=flock -fPIE   -std=gnu99 -o CMakeFiles\cmTC_0e019.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_0e019
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0e019.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=flock  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_0e019.dir/CheckFunctionExists.c.o  -o cmTC_0e019 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function arc4random_buf exists passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_a368b/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_a368b.dir\build.make CMakeFiles/cmTC_a368b.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a368b.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=arc4random_buf -fPIE   -std=gnu99 -o CMakeFiles\cmTC_a368b.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_a368b
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a368b.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=arc4random_buf  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_a368b.dir/CheckFunctionExists.c.o  -o cmTC_a368b -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function __atomic_load_1 exists in the atomic passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_ad9de/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_ad9de.dir\build.make CMakeFiles/cmTC_ad9de.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad9de.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=__atomic_load_1 -fPIE   -std=gnu99 -o CMakeFiles\cmTC_ad9de.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_ad9de
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ad9de.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=__atomic_load_1  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_ad9de.dir/CheckFunctionExists.c.o  -o cmTC_ad9de -latomic -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the AF_UNIX exist passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_91e58/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_91e58.dir\build.make CMakeFiles/cmTC_91e58.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91e58.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_91e58.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_91e58
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_91e58.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_91e58.dir/CheckSymbolExists.c.o  -o cmTC_91e58 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/socket.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef AF_UNIX
+  return ((int*)(&AF_UNIX))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test NNG_HAVE_MSG_CONTROL succeeded with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_f462c/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_f462c.dir\build.make CMakeFiles/cmTC_f462c.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f462c.dir/src.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DNNG_HAVE_MSG_CONTROL -fPIE   -std=gnu99 -o CMakeFiles\cmTC_f462c.dir\src.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_f462c
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f462c.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DNNG_HAVE_MSG_CONTROL  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_f462c.dir/src.c.o  -o cmTC_f462c -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <sys/socket.h>
+
+int main()
+{
+  (void)sizeof(((struct msghdr *)0)->msg_control);
+  return 0;
+}
+
+Determining if the eventfd exist passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_d7669/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_d7669.dir\build.make CMakeFiles/cmTC_d7669.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7669.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_d7669.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_d7669
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d7669.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_d7669.dir/CheckSymbolExists.c.o  -o cmTC_d7669 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/eventfd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef eventfd
+  return ((int*)(&eventfd))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the epoll_create exist passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_67c12/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_67c12.dir\build.make CMakeFiles/cmTC_67c12.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67c12.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_67c12.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_67c12
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_67c12.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_67c12.dir/CheckSymbolExists.c.o  -o cmTC_67c12 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/epoll.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef epoll_create
+  return ((int*)(&epoll_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the SO_PEERCRED exist passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_a38e8/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_a38e8.dir\build.make CMakeFiles/cmTC_a38e8.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a38e8.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_a38e8.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_a38e8
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a38e8.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_a38e8.dir/CheckSymbolExists.c.o  -o cmTC_a38e8 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/socket.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SO_PEERCRED
+  return ((int*)(&SO_PEERCRED))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the atomic_flag_test_and_set exist passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_d2f76/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_d2f76.dir\build.make CMakeFiles/cmTC_d2f76.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2f76.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_d2f76.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_d2f76
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d2f76.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_d2f76.dir/CheckSymbolExists.c.o  -o cmTC_d2f76 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdatomic.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef atomic_flag_test_and_set
+  return ((int*)(&atomic_flag_test_and_set))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strlcpy exist passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_aac0e/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_aac0e.dir\build.make CMakeFiles/cmTC_aac0e.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aac0e.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_aac0e.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_aac0e
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_aac0e.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_aac0e.dir/CheckSymbolExists.c.o  -o cmTC_aac0e -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strnlen exist passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_0822e/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_0822e.dir\build.make CMakeFiles/cmTC_0822e.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0822e.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_0822e.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_0822e
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0822e.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_0822e.dir/CheckSymbolExists.c.o  -o cmTC_0822e -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strnlen
+  return ((int*)(&strnlen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_28168/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_28168.dir\build.make CMakeFiles/cmTC_28168.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28168.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_28168.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_28168
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_28168.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_28168.dir/CheckSymbolExists.c.o  -o cmTC_28168 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strncasecmp exist passed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_73c99/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_73c99.dir\build.make CMakeFiles/cmTC_73c99.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73c99.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_73c99.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_73c99
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_73c99.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer     -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_73c99.dir/CheckSymbolExists.c.o  -o cmTC_73c99 -latomic -lm 
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncasecmp
+  return ((int*)(&strncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

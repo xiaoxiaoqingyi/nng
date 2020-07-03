@@ -1,0 +1,407 @@
+Determining if the function lockf exists failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_aba35/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_aba35.dir\build.make CMakeFiles/cmTC_aba35.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aba35.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=lockf -fPIE   -std=gnu99 -o CMakeFiles\cmTC_aba35.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_aba35
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_aba35.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=lockf  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_aba35.dir/CheckFunctionExists.c.o  -o cmTC_aba35 -latomic -lm 
+D:\Program Files\CMake\share\cmake-3.15\Modules/CheckFunctionExists.c:17: error: undefined reference to 'lockf'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_aba35] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_aba35/fast] Error 2
+
+
+
+Determining if the function getrandom exists failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_f6d33/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_f6d33.dir\build.make CMakeFiles/cmTC_f6d33.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f6d33.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=getrandom -fPIE   -std=gnu99 -o CMakeFiles\cmTC_f6d33.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_f6d33
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f6d33.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=getrandom  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_f6d33.dir/CheckFunctionExists.c.o  -o cmTC_f6d33 -latomic -lm 
+D:\Program Files\CMake\share\cmake-3.15\Modules/CheckFunctionExists.c:17: error: undefined reference to 'getrandom'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_f6d33] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_f6d33/fast] Error 2
+
+
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_742b5/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_742b5.dir\build.make CMakeFiles/cmTC_742b5.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_742b5.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=clock_gettime -fPIE   -std=gnu99 -o CMakeFiles\cmTC_742b5.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_742b5
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_742b5.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=clock_gettime  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_742b5.dir/CheckFunctionExists.c.o  -o cmTC_742b5 -lrt -latomic -lm 
+E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: cannot find -lrt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_742b5] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_742b5/fast] Error 2
+
+
+
+Determining if the function sem_wait exists in the pthread failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_e3ec9/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_e3ec9.dir\build.make CMakeFiles/cmTC_e3ec9.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3ec9.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=sem_wait -fPIE   -std=gnu99 -o CMakeFiles\cmTC_e3ec9.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_e3ec9
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e3ec9.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=sem_wait  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_e3ec9.dir/CheckFunctionExists.c.o  -o cmTC_e3ec9 -lpthread -latomic -lm 
+E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: cannot find -lpthread
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_e3ec9] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_e3ec9/fast] Error 2
+
+
+
+Determining if the function pthread_atfork exists in the pthread failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_d0589/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_d0589.dir\build.make CMakeFiles/cmTC_d0589.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0589.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=pthread_atfork -fPIE   -std=gnu99 -o CMakeFiles\cmTC_d0589.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_d0589
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d0589.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=pthread_atfork  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_d0589.dir/CheckFunctionExists.c.o  -o cmTC_d0589 -lpthread -latomic -lm 
+E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: cannot find -lpthread
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_d0589] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d0589/fast] Error 2
+
+
+
+Determining if the function gethostbyname exists in the nsl failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_af8f9/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_af8f9.dir\build.make CMakeFiles/cmTC_af8f9.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af8f9.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=gethostbyname -fPIE   -std=gnu99 -o CMakeFiles\cmTC_af8f9.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_af8f9
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_af8f9.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=gethostbyname  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_af8f9.dir/CheckFunctionExists.c.o  -o cmTC_af8f9 -lnsl -latomic -lm 
+E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: cannot find -lnsl
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_af8f9] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_af8f9/fast] Error 2
+
+
+
+Determining if the function socket exists in the socket failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_080c0/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_080c0.dir\build.make CMakeFiles/cmTC_080c0.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_080c0.dir/CheckFunctionExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=socket -fPIE   -std=gnu99 -o CMakeFiles\cmTC_080c0.dir\CheckFunctionExists.c.o   -c "D:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_080c0
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_080c0.dir\link.txt --verbose=1
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DCHECK_FUNCTION_EXISTS=socket  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_080c0.dir/CheckFunctionExists.c.o  -o cmTC_080c0 -lsocket -latomic -lm 
+E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\ld: error: cannot find -lsocket
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_080c0] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_080c0/fast] Error 2
+
+
+
+Determining if the backtrace_symbols_fd exist failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_27368/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_27368.dir\build.make CMakeFiles/cmTC_27368.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27368.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_27368.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:10: fatal error: 'execinfo.h' file not found
+#include <execinfo.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_27368.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_27368/fast] Error 2
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <execinfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef backtrace_symbols_fd
+  return ((int*)(&backtrace_symbols_fd))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the kqueue exist failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_d9f7a/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_d9f7a.dir\build.make CMakeFiles/cmTC_d9f7a.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9f7a.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_d9f7a.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d9f7a.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d9f7a/fast] Error 2
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef kqueue
+  return ((int*)(&kqueue))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the port_create exist failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_9d264/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_9d264.dir\build.make CMakeFiles/cmTC_9d264.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d264.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_9d264.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:10: fatal error: 'port.h' file not found
+#include <port.h>
+         ^~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_9d264.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_9d264/fast] Error 2
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <port.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef port_create
+  return ((int*)(&port_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the epoll_create1 exist failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_680df/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_680df.dir\build.make CMakeFiles/cmTC_680df.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_680df.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_680df.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: use of undeclared identifier 'epoll_create1'; did you mean 'epoll_create'?
+  return ((int*)(&epoll_create1))[argc];
+                  ^~~~~~~~~~~~~
+                  epoll_create
+E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\sys/epoll.h:40:5: note: 'epoll_create' declared here
+int epoll_create(int __size);
+    ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_680df.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_680df/fast] Error 2
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/epoll.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef epoll_create1
+  return ((int*)(&epoll_create1))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getpeereid exist failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_d262f/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_d262f.dir\build.make CMakeFiles/cmTC_d262f.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d262f.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_d262f.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: use of undeclared identifier 'getpeereid'
+  return ((int*)(&getpeereid))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d262f.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d262f/fast] Error 2
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpeereid
+  return ((int*)(&getpeereid))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test NNG_HAVE_SOCKPEERCRED failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_a4a50/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_a4a50.dir\build.make CMakeFiles/cmTC_a4a50.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4a50.dir/src.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer   -DNNG_HAVE_SOCKPEERCRED -fPIE   -std=gnu99 -o CMakeFiles\cmTC_a4a50.dir\src.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\src.c
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\src.c:6:42: error: incomplete definition of type 'struct sockpeercred'
+  (void)sizeof(((struct sockpeercred *)0)->uid);
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\src.c:6:25: note: forward declaration of 'struct sockpeercred'
+  (void)sizeof(((struct sockpeercred *)0)->uid);
+                        ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a4a50.dir/src.c.o] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_a4a50/fast] Error 2
+
+
+Source file was:
+
+#include <sys/socket.h>
+
+int main()
+{
+  (void)sizeof(((struct sockpeercred *)0)->uid);
+  return 0;
+}
+
+Determining if the LOCAL_PEERCRED exist failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_568ae/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_568ae.dir\build.make CMakeFiles/cmTC_568ae.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_568ae.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_568ae.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: use of undeclared identifier 'LOCAL_PEERCRED'
+  return ((int*)(&LOCAL_PEERCRED))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_568ae.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_568ae/fast] Error 2
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/un.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef LOCAL_PEERCRED
+  return ((int*)(&LOCAL_PEERCRED))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the LOCAL_PEERPID exist failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_e30d1/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_e30d1.dir\build.make CMakeFiles/cmTC_e30d1.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e30d1.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_e30d1.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: use of undeclared identifier 'LOCAL_PEERPID'
+  return ((int*)(&LOCAL_PEERPID))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_e30d1.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_e30d1/fast] Error 2
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/un.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef LOCAL_PEERPID
+  return ((int*)(&LOCAL_PEERPID))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getpeerucred exist failed with the following output:
+Change Dir: E:/cProject/nng/android-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe cmTC_e067a/fast && E:/AndroidSDK/ndk-bundle/prebuilt/windows-x86_64/bin/make -f CMakeFiles\cmTC_e067a.dir\build.make CMakeFiles/cmTC_e067a.dir/build
+make[1]: Entering directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e067a.dir/CheckSymbolExists.c.o
+E:\AndroidSDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/AndroidSDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Wall -Wextra -fno-omit-frame-pointer    -fPIE   -std=gnu99 -o CMakeFiles\cmTC_e067a.dir\CheckSymbolExists.c.o   -c E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+E:\cProject\nng\android-build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:10: fatal error: 'ucred.h' file not found
+#include <ucred.h>
+         ^~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_e067a.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `E:/cProject/nng/android-build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_e067a/fast] Error 2
+
+
+File E:/cProject/nng/android-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <ucred.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpeerucred
+  return ((int*)(&getpeerucred))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
