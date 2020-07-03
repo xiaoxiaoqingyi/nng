@@ -183,3 +183,10 @@ inquire further.
 The development of NNG has been made possible through the generous
 sponsorship of https://www.capitar.com[Capitar IT Group BV] and
 http://staysail.tech[Staysail Systems, Inc.].
+
+ps: build android 
+
+cmake -G "MinGW Makefiles" -DCMAKE_TOOLCHAIN_FILE=E:\AndroidSDK\ndk-bundle\build\cmake\android.toolchain.cmake -DCMAKE_MAKE_PROGRAM="E:\AndroidSDK\ndk-bundle\prebuilt\windows-x86_64\bin\make.exe" -DANDROID_NATIVE_API_LEVEL=android-19 -DANDROID_STL=c++_shared ..
+
+install cmake PC 
+edit CMakeLists.txt, add share for .so
